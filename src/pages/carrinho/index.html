@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="./carrinho.css">
+   
+</head>
+<body>
+      <main class="page">
+    <section class="cart-modal">
+      <button class="close-btn">X</button>
+
+      <div class="cart-content">
+        <div class="cart-items">
+          <article class="cart-item" data-price="845.99">
+            <img src="/src/assets/image/tenis.png" alt="Produto 1">
+            
+            <div class="item-info">
+              <div class="item-header">
+                <div>
+                  <h2>Nike Dunk Low - White/University Blue</h2>
+                  <p class="category">Tênis</p>
+                </div>
+                <button class="remove-btn">x</button>
+              </div>
+
+              <div class="item-controls">
+                <span class="size">Tamanho: 40</span>
+
+                <div class="qty-box">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+              </div>
+
+              <p class="item-price">R$ 845,99</p>
+            </div>
+          </article>
+
+          <article class="cart-item" data-price="125.99">
+            <img src="/src/assets/image/image 37.png" alt="Produto 2">
+            
+            <div class="item-info">
+              <div class="item-header">
+                <div>
+                  <h2>Óculos de Sol Masculino Sun Style</h2>
+                  <p class="category">acessórios</p>
+                </div>
+                <button class="remove-btn">x</button>
+              </div>
+
+              <div class="item-controls">
+                <span class="size">Tamanho: Único</span>
+
+                <div class="qty-box">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+              </div>
+
+              <p class="item-price">R$ 125,99</p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="summary">
+          <h3>Resumo</h3>
+
+          <div class="summary-line">
+            <span>ITEM 1</span>
+            <span id="item1Price">R$845,99</span>
+          </div>
+
+          <div class="summary-line">
+            <span>ITEM 2</span>
+            <span id="item2Price">R$125,99</span>
+          </div>
+
+          <div class="summary-line">
+            <span>Subtotal</span>
+            <span id="subtotal">R$975,99</span>
+          </div>
+
+          <div class="summary-line">
+            <span>Frete</span>
+            <span class="free-shipping">GRÁTIS</span>
+          </div>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <span id="total">R$975,99</span>
+          </div>
+
+          <button class="checkout-btn">Finalizar Compra</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+ <script src="./carrinho.js"></script>
+    
+</body>
+</html>

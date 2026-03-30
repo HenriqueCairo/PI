@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #000000;
+  --card: #232323;
+  --text: #ffffff;
+  --muted: #9a9a9a;
+  --border: #7d7d7d;
+  --accent: #39ff14;
+  --input-bg: #000000;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 560px;
+  background: var(--card);
+  border-radius: 18px;
+  padding: 28px 32px 24px;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.two-columns input {
+  width: 50%;
+}
+
+.three-columns input {
+  width: calc(33.333% - 7px);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  height: 42px;
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0 12px;
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.form input::placeholder {
+  color: var(--text);
+  font-size: 0.74rem;
+}
+
+.form input:focus {
+  border-color: #ffffff;
+}
+
+.label {
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.sexo-cpf {
+  align-items: flex-end;
+}
+
+.sexo-box {
+  width: 50%;
+}
+
+.cpf-box {
+  width: 50%;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  min-height: 42px;
+  align-items: center;
+  color: #d5d5d5;
+  font-size: 0.8rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.radio-group input[type="radio"] {
+  accent-color: #ffffff;
+}
+
+.btn-primary {
+  height: 46px;
+  border: none;
+  background: var(--accent);
+  color: #000000;
+  font-weight: 800;
+  font-size: 1.05rem;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(0.95);
+}
+
+.bottom-text {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.bottom-text p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.bottom-text a {
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+  .card {
+    padding: 24px 20px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .two-columns input,
+  .three-columns input,
+  .sexo-box,
+  .cpf-box {
+    width: 100%;
+  }
+
+  .radio-group {
+    min-height: auto;
+    padding: 10px 0 2px;
+  }
+}

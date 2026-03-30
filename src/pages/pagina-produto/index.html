@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Produto</title>
+    <link rel="stylesheet" href="./pagina-produto.css">
+    
+</head>
+<body>
+     <main class="page">
+    <a href="#" class="back-link">← Voltar à loja</a>
+
+    <section class="product-layout">
+      <!-- COLUNA ESQUERDA -->
+      <div class="gallery-column">
+        <div class="main-image">
+          <img id="mainProductImage" src="/src/assets/image/produto.png" alt="Camiseta principal">
+        </div>
+
+        <div class="thumbs">
+          <button class="thumb active">
+            <img src="/src/assets/image/miniatura1.png" alt="Miniatura 1">
+          </button>
+
+          <button class="thumb">
+            <img src="/src/assets/image/miniatura2.png" alt="Miniatura 2">
+          </button>
+        </div>
+      </div>
+
+      <!-- COLUNA DIREITA -->
+      <div class="info-column">
+        <p class="category">CAMISETAS</p>
+
+        <h1 class="product-title">
+          ESSENTIALS "OFF-GRID"<br>
+          OVERSIZED TEE
+        </h1>
+
+        <p class="price">R$ 189,90</p>
+
+        <div class="size-section">
+          <p class="section-title">GUIA DE MEDIDAS</p>
+
+          <div class="sizes">
+            <button class="size-btn">M</button>
+            <button class="size-btn">G</button>
+            <button class="size-btn">GG</button>
+            <button class="size-btn">XGG</button>
+          </div>
+        </div>
+
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO →</button>
+
+        <div class="divider"></div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span>COMPOSIÇÃO DO MATERIAL</span>
+              <span class="arrow">›</span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Tecido: 100% Algodão Premium de alta gramatura (220 GSM).
+              </p>
+              <p>
+                Fio: 30.1 Penteado (toque macio e resistente).
+              </p>
+              <p>
+                Modelagem: Oversized com caimento estruturado e gola canelada de 3cm.
+              </p>
+              <p>
+                Acabamento: Peça pré-encolhida e amaciada em lavanderia para evitar distorções.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span>INSTRUÇÕES DE LAVAGEM</span>
+              <span class="arrow">›</span>
+            </button>
+            <div class="accordion-content">
+              <p>Lavar à máquina com água fria (máximo 30°C).</p>
+              <p>Não utilizar alvejante ou cloro.</p>
+              <p>Secar à sombra, evitando secadora para maior durabilidade.</p>
+              <p>Passar do avesso com ferro em temperatura média.</p>
+              <p>Não lavar a seco.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger active">
+              <span>ENVIO E DEVOLUÇÕES</span>
+              <span class="arrow">⌄</span>
+            </button>
+            <div class="accordion-content open">
+              <p>Frete Grátis: Disponível para todo o Brasil em compras acima de R$ 350.</p>
+              <p>Prazo de Postagem: Seu pedido será enviado em até 2 dias úteis.</p>
+              <p>Trocas: Primeira troca grátis em até 7 dias após o recebimento.</p>
+              <p>Segurança: Pagamento processado com criptografia de ponta a ponta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<script src="./pagina-produto.js"></script>
+</body>
+</html>

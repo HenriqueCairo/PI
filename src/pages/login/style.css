@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #000000;
+  --card: #232323;
+  --text: #ffffff;
+  --muted: #9a9a9a;
+  --border: #7d7d7d;
+  --accent: #39ff14;
+  --input-bg: #000000;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: var(--card);
+  border-radius: 18px;
+  padding: 32px 32px 26px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 48px;
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0 14px;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: var(--text);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.input-group input:focus {
+  border-color: #ffffff;
+}
+
+.forgot-wrap {
+  text-align: right;
+  margin-top: 2px;
+}
+
+.forgot-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.forgot-link:hover {
+  color: var(--text);
+}
+
+.btn-primary {
+  height: 48px;
+  border: none;
+  background: var(--accent);
+  color: #000000;
+  font-weight: 800;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(0.95);
+}
+
+.bottom-text {
+  margin-top: 18px;
+}
+
+.bottom-text p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.bottom-text a {
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 24px 20px 22px;
+  }
+
+  .card h1 {
+    font-size: 1.7rem;
+  }
+
+  .subtitle {
+    font-size: 0.88rem;
+  }
+}
