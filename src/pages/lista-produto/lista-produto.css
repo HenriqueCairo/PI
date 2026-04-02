@@ -1,0 +1,435 @@
+  .titulo {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+.titulo2{
+ padding-left: 113px;
+ color: white;
+}
+
+.titulo3{
+  padding-left: 98px;
+  color: white;
+ }
+
+.categorias{
+  padding: 20px;
+  background-color: black;
+  margin-top: 67px;
+  color: white;
+
+  width: 370px;
+
+  order: -1; /* 🔥 ISSO RESOLVE */
+}
+
+.roupas{
+  cursor: pointer;
+}
+
+.valor{
+  cursor: pointer;
+}
+
+h5{
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.catalogo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.produtos {
+  flex: 1;
+}
+
+.grid-produtos {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+  gap: 30px;
+  margin-top: -10px; /* espaço abaixo do título */
+
+  text-align: initial; /* 🔥 impede herdar alinhamento */
+}
+
+.grid-produtos img {
+  width: 100%;
+  aspect-ratio: 1/1; /* deixa tudo quadrado */
+  object-fit: cover;
+  display: block;
+}
+
+/* 🔘 CONTAINER DAS BOLINHAS */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+/* 🔘 BOLINHAS */
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #555;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* 🔥 ATIVA */
+.dot.active {
+  background: #1EFF00;
+  transform: scale(1.2);
+}
+
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+  /* CENTRALIZA LOGO NO MOBILE */
+  /* HEADER */
+  header {
+  padding: 0 20px;
+  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  }
+
+  header h1 {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* 🔥 ESCONDE MENU NORMAL */
+  .navbar-conteiner {
+    display: none;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  /* 🍔 HAMBURGER */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+
+/* MENU MOBILE ABERTO */
+.menu-mobile {
+  position: fixed; /* 🔥 MUDA TUDO */
+  top: 0;
+  right: -100%; /* começa escondido fora da tela */
+  width: 75%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 25px;
+
+  transition: 0.3s ease;
+  z-index: 999;
+
+
+  /* 🔥 BORDA ARREDONDADA IGUAL APP */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+ .menu-mobile a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu-mobile.active {
+  right: 0;
+}
+
+.menu-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative; /* 🔥 importante */
+}
+
+/* LOGO */
+.menu-top h1 {
+  all: unset; /* 🔥 limpa TODAS as heranças */
+
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  font-size: 22px;
+  font-weight: bold;
+  color: #1EFF00; /* mesma cor STORE */
+
+  margin-bottom: 10px;
+}
+
+.linha {
+  width: 100%;
+  height: 2px;
+  background: rgba(255,255,255,0.4);
+
+  position: relative; /* 🔥 ESSENCIAL */
+  z-index: 1;
+
+  margin-bottom: 12px;
+}
+
+.search-mobile {
+   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-mobile input {
+  width: 80%;
+  height: 28px;
+  background: #444;
+  border: none;
+  border-radius: 20px;
+  padding: 0 10px;
+  color: white;
+}
+
+  .dots {
+    margin-top: 12px;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 10px;   /* 🔥 maior p toque */
+    height: 10px;
+  }
+
+  .dot.active {
+    transform: scale(1.3);
+  }
+
+  /* 📱 FOOTER MOBILE */
+footer {
+  height: auto;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* LOGO */
+footer h1 {
+  font-size: 28px;
+  padding: 0;
+  text-align: center;
+}
+
+/* TEXTO */
+footer p {
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* ICONS */
+.icons-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  width: 100%;        /* 🔥 ESSENCIAL */
+  margin-left: 88px;     /* cancela o -434px */
+  margin-top: 10px;
+  
+}
+
+/* 🔥 REMOVE POSITION ABSOLUTE */
+.support,
+.enterprise,
+.coupon,
+.e-mail {
+  position: static;
+  width: 100%;
+}
+
+/* BLOCOS */
+.support,
+.enterprise,
+.coupon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* TITULOS */
+.support h2,
+.enterprise h2,
+.coupon h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* LINKS */
+.support a,
+.enterprise a {
+  font-size: 14px;
+}
+
+/* CUPOM TEXTO */
+.coupon h3 {
+  font-size: 13px;
+  text-align: center;
+}
+
+/* EMAIL */
+.e-mail {
+  display: flex;
+  justify-content: center;
+}
+
+.e-mail input {
+  width: 100%;
+  max-width: 250px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+   /* 🔥 REMOVE SCROLL LATERAL */
+body {
+  overflow-x: hidden;
+}
+
+/* 🔥 CATALOGO */
+.catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* 🔥 diminui espaço geral */
+  padding: 10px;
+}
+
+/* 🛍️ PRODUTOS */
+.produtos {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 🔥 MAIS RESPIRO NO TÍTULO */
+.titulo {
+  text-align: center;
+  font-size: 16px;
+  margin: 18px 0 25px 0; /* 🔥 mais espaço em cima e embaixo */
+}
+
+/* GRID */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin-left: 0;
+}
+
+.grid-produtos img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 📂 CATEGORIAS (SUBIU 🔥) */
+.categorias {
+  width: 100%;
+  max-width: 100%;
+  padding: 5px 10px; /* 🔥 menos padding em cima */
+  margin-top: -5px; /* 🔥 puxa pra cima */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* TÍTULOS */
+.titulo2,
+.titulo3 {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  margin-left: -60px;
+
+  flex: 0 0 100%; /* 🔥 ESSA LINHA RESOLVE */
+}
+
+/* 🔥 CHIPS */
+.roupas,
+.valor {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 15px;
+  margin: 2px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+/* SEGURANÇA */
+img {
+  max-width: 100%;
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  pointer-events: none;
+
+  z-index: 998;
+  transition: 0.3s;
+}
+
+/* 🔥 quando o menu abre */
+.overlay-menu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+}
+
+
+ 

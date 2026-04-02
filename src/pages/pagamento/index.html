@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="./pagamento.css">
+    <link rel="stylesheet" href="/src/components/header/header.css">
+    <link rel="stylesheet" href="/src/components/footer/footer.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+         <section>
+        <div class="square">
+            <h1>&larr; Pagamento</h1>
+            <div class="square-conteiner">
+                <div class="square1"></div>
+                <div class="square1"></div>
+                <div class="square1"></div>
+            </div>
+            <div class="card">
+                <label for="card-number">Número do cartão</label>
+                <input type="text" id="card-number" maxlength="19" placeholder="0000 0000 0000 0000">
+            </div>
+            
+            <div class="validity">
+                <div class="box">
+                    <label>Data de validade</label>
+                    <input type="text" id="expiration-date" maxlength="5" placeholder="MM/AA">
+                </div>
+
+                <div class="box">
+                    <label>CVV</label>
+                    <input type="text" id="cvv" maxlength="4" placeholder="123">
+                </div>
+            </div>
+
+            <div class="name">
+                <label>Nome do titular</label>
+                <input type="text" id="card-name" placeholder="Nome como está no cartão">
+            </div>
+
+            <button>Concluir compra</button>
+
+        </div>
+
+        <div class="square2">
+
+            <hr>
+          
+            <div class="tennis">
+                <img src="./src/assets/image/tenis.svg" alt="tenis nike" class="product">
+                <h3>Nike Dunk Low -<br>White/University Blue <br><br> <span>R$ 845,99</span></h3>
+            </div>
+
+            <div class="glasses">
+                <img src="./src/assets/image/oculos.svg" alt="oculos de sol" class="product">
+                <h3>Óculos de Sol Masculino <br> Sun Style <br><br> <span>R$ 125,99</span></h3>
+            </div>
+
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <span class="price">R$ 971,98</span>
+            </div>
+
+            <div class="freight">
+                <span>Frete</span>
+                <span class="free">GRÁTIS</span>
+            </div>
+
+            <hr class="linha2">
+
+            <div class="total">
+                <span>Total</span>
+                <span>R$ 971,98</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    </main>
+    <div id="footer"></div>
+    <script src="./pagamento.js"></script>
+</body>
+</html>

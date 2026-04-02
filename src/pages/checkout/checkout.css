@@ -1,0 +1,202 @@
+section {
+    background-color: black;
+    padding: 5px;
+}
+
+.square {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    background-color: #333;
+    width: 850px;
+    height: auto;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.square {
+  width: 65%;
+}
+
+.square2 {
+  width: 35%;
+}
+
+.contact h1 {
+    padding: 5px 10px;
+    color: white;
+}
+
+.contact p {
+    padding: 0 10px;
+    color: gray;
+}
+
+.contact-conteiner label {
+    padding: 0 10px;
+    color: white;
+}
+
+.contact-conteiner input {
+    padding: 10px;
+    margin: 10px;
+    width: 820px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 5px;    
+}
+
+.shipping-address h1 {
+    padding: 5px 10px;
+    color: white;
+}
+
+.name-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.name-conteiner input {
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 5px;
+}
+
+.cep-conteiner input {
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 5px;
+}
+
+.cep-conteiner button {
+  width: 270px;
+  height: 40px;
+  background-color: black;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+}
+
+.cep-conteiner button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.address {
+   padding: 0 10px;
+   color: white;
+}
+
+.address input {
+   margin-top: 10px;
+   padding: 10px;
+   width: 820px;
+   height: 40px;
+   background-color: black;
+   color: white;
+   border-color: white;
+   border-radius: 5px; 
+}
+
+.linha-vertical {
+  width: 1px;
+  height: 1018px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.resume {
+  margin-top: 50px;
+  margin-right: 10px;
+  width: 470px;
+  height: auto;
+  background-color: #333;
+}
+
+.resume h1 {
+  margin-left: 20px;
+  margin-top: 20px; 
+  color: white;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin: 20px 20px;
+  color: gray;
+  font-weight: 700;
+}
+
+.price {
+  color: white;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin: 20px 20px;
+  color: gray;
+  font-weight: 700;
+}
+
+.frete {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin: 20px 20px;
+  color: gray;
+  font-weight: 700;
+}
+
+.gratis {
+  color: #1EFF00;
+}
+
+hr {
+  border: 1px solid white;
+  margin: 20px 20px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding-top: 20px;
+  margin: 20px 20px;
+  color: white;
+  font-weight:800;
+}
+
+.finish {
+  margin: 20px 20px;
+  width: 430px;
+  height: 65px;
+  background-color: #1EFF00;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.finish:hover {
+  opacity: 0.8;
+}

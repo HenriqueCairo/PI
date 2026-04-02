@@ -1,0 +1,237 @@
+section {
+    display: flex;
+    background-color: black;
+    margin: 20px 20px 20px 20px;
+}
+
+.square {
+    width: 690px;
+    height: 970px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-top: 120px;
+    margin-left: 40px;
+    margin-bottom: 120px;
+}
+
+section h1 {
+    font-size: 40px;
+    color: white;
+    margin: 40px 40px;
+}
+
+.square-conteiner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.square1 {
+    background-color: black;
+    border: 1px solid white;
+    width: 165px;
+    height: 160px;
+    border-radius: 20px;
+    border-color: white;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+
+.card {
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card label {
+    color: #929292;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card input {
+    width: 100%;
+    max-width: 570px;
+    height: 65px;
+    background-color: black;
+    border-color: white;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.validity{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.name {
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.name label {
+    color: #929292;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name input {
+    width: 100%;
+    max-width: 570px;
+    height: 65px;
+    background-color: black;
+    border-color: white;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.validity label {
+    color: #929292;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.validity input {
+    width: 100%;
+    max-width: 230px;
+    height: 65px;
+    background-color: black;
+    border-color: white;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.square button {
+    width: 570px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #1EFF00;
+    color: black;
+    font-size: 32px;
+    font-weight: 900;
+    cursor: pointer;
+    border: none;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.square button:hover {
+    opacity: 0.8;
+}
+
+.square2 {
+    width: 565px;
+    height: 745px;
+    background-color: #333;
+    margin-top: 120px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+hr {
+    margin-top: 90px;
+    margin-left: 55px;
+    width: 460px;
+    border: 1px solid #929292;
+}
+
+.tennis {
+    display: flex;
+}
+
+.product {
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+.tennis h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.tennis span {
+    font-size: 15px;
+    color: white;
+}
+
+.glasses {
+    display: flex;
+}
+
+.glasses h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.glasses span {
+    font-size: 15px;
+    color: white;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin: 55px 55px;
+    font-size: 18px;
+    color: #929292;
+    font-weight: bold;
+}
+
+.price {
+    color: white;
+}
+
+.freight {
+    display: flex;
+    justify-content: space-between;
+    margin: 55px 55px;
+    font-size: 18px;
+    color: #929292;
+    font-weight: bold;
+}
+
+.free {
+    color: #1EFF00;
+}
+
+.linha2 {
+    margin-top: -25px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 55px 55px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}

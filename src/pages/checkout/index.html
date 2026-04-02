@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="/src/components/header/header.css">
+    <link rel="stylesheet" href="/src/components/footer/footer.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <section class="checkout">
+        <div class="square">
+            <div class="contact">
+                <h1>Contato</h1>
+                <p>Usaremos essa forma de contato para manter você informado sobre o pedido.</p>
+                <br>
+            </div>
+            <br>
+            <div class="contact-conteiner">
+                <label for="email">E-mail*</label> <br>
+                <input type="email" placeholder="" required> <br><br>
+                <label for="telefone">Telefone*</label> <br>
+                <input type="tel" placeholder="" required>
+            </div>
+            
+            <br>
+            
+            <div class="shipping-address">
+                
+                <h1>Endereço de envio</h1>
+                
+                <div class="name-conteiner">
+                     <label for="nome"></label> <br>
+                     <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                     <label for="sobrenome"></label> <br>
+                     <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required> <br>
+                    </div>
+                    
+                    <div class="cep-conteiner">
+                        <label for="cep"></label> <br>
+                        <input type="text" id="cep" name="cep" placeholder="CEP" required onkeypress="if(event.key === 'Enter') buscarCep()">
+                        <button onclick="buscarCep()">buscar CEP</button>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="address">
+                        <label for="endereco">Endereço</label> <br>
+                        <input type="text" id="endereco" name="endereco" placeholder="" required>
+                        
+                    <br> <br>
+                    
+                    <label for="bairro">Bairro</label> <br>
+                    <input type="text" id="bairro" name="bairro" placeholder="" required>
+                    
+                    <br> <br>
+                    
+                    <label for="cidade">Cidade</label> <br>
+                    <input type="text" id="cidade" name="cidade" placeholder="" required>
+                    
+                    <br><br>
+                    
+                    <label for="estado">Estado</label> <br>
+                    <input type="text" id="estado" name="estado" placeholder="" required>
+                    
+                    <br><br>
+                    
+                    <label for="casa-apartamento">Casa ou apartamento</label> <br>
+                    <input type="text" id="casa-apartamento" name="casa-apartamento" placeholder="" required>
+
+                    <br><br>
+                    
+                    <label for="numero-bloco">Número ou bloco</label> <br>
+                    <input type="text" id="numero-bloco" name="numero-bloco" placeholder="" required>
+                    
+                </div> <br>
+            </div>
+        </div>
+
+        <div class="linha-vertical"></div>
+        
+        <div class="resume">
+            <h1>Resumo</h1>
+            
+            <div class="item">
+                <span>ITEM 1</span>
+                <span class="price">R$ 845,99</span>
+            </div>
+            
+            <div class="item">
+                <span>ITEM 2</span>
+                <span class="price">R$ 125,99</span>
+            </div>
+            
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <span class="price">R$971,98</span>
+            </div>
+            
+            <div class="frete">
+                <span>Frete</span>
+                 <span class="gratis">GRÁTIS</span>
+                </div>
+                
+                <hr>
+                
+                <div class="total">
+                    <span>TOTAL</span>
+                 <span>R$971,98</span>
+                </div>
+
+                <button class="finish">Finalizar Compra</button>
+                
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="./checkout.js"></script>
+</body>
+</html>

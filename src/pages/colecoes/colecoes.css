@@ -15,24 +15,30 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: #dcdcdc;
+  color: white;
+  width: 100%;
+ 
 }
 
 .page {
   max-width: 1400px;
   margin: 0 auto;
-  background: var(--bg-light);
+  background: white;
   min-height: 100vh;
+  padding-top: 80px;  
+  padding-bottom: 80px; 
 }
 
 .launch-section {
   width: 100%;
+ 
 }
 
 .launch-top {
   background: var(--bg-light);
   text-align: center;
   padding: 28px 20px 10px;
+ 
 }
 
 .launch-label {

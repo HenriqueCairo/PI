@@ -1,0 +1,476 @@
+  .banner {
+    position: relative; /* 🔥 necessário pro overlay funcionar */
+    height: 420px;
+    overflow: hidden;
+}
+
+.video-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🔥 overlay preto transparente */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5); /* ajusta aqui */
+}
+
+.texto-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    text-align: center;
+}
+
+.texto-banner h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn-banner {
+    margin-top: 20px;
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 30px; /* 🔥 deixa arredondado */
+    
+    background-color: white;
+    color: black;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🔥 efeito ao passar o mouse */
+.btn-banner:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.menu1 {
+  display: flex;
+  gap: 11px;
+  padding: 5px;
+  margin-top: 70px;
+}
+
+.explorar{
+  cursor: pointer;
+}
+
+.item {
+  position: relative;
+  flex: 1;
+  height: 600px; /* aumenta o tamanho geral */
+  overflow: hidden;
+}
+
+/* imagem ocupa tudo corretamente */
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* overlay cobrindo 100% */
+.menu1 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* ESCURECIMENTO IGUAL DA SUA IMAGEM */
+  background: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 20px;
+}
+
+/* textos */
+.menu1 .overlay h3 {
+  margin: 0;
+  color: white;
+  font-size: 22px;
+}
+
+.menu1 .overlay span {
+  color: #00ff66;
+  font-size: 14px;
+}
+
+.menu2 {
+  padding: 20px;
+}
+
+/* TOPO (titulo + botão) */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.drop {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.text_inspire {
+  font-size: 40px;
+  font-weight: bold;
+ 
+}
+
+.text_conferir {
+  cursor: pointer;
+  font-size: 14px;
+  
+}
+
+/* GRID DAS IMAGENS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.item2 {
+  position: relative;
+}
+
+.item2 img {
+  width: 100%;
+  height: 900px; /* mantém seu design */
+  object-fit: cover;
+}
+
+.item2 p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.desc {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+
+/* GRID DAS IMAGENS 2 (MENU3) (item3) */
+.menu3 {
+  background-color: black;
+  color: white;
+  padding: 60px;
+  margin-top: 40px;
+}
+
+/* TOPO */
+.topo2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.novidades {
+  color: #39ff14; /* verde neon */
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+
+.lancamentos {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.conferir2 {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* GRID */
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 660px); /* largura fixa 🔥 */
+  gap: 1px;
+
+  justify-content: end; /* joga tudo pra direita */
+  margin-top: 40px;
+}
+
+/* IMAGENS */
+.item3 {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.item3 img {
+  width: 90%;
+  height: 700px;
+  object-fit: cover;
+}
+
+/* 🔥 ESCONDE HAMBURGER NO DESKTOP */
+.hamburger {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+
+  z-index: 998;
+}
+
+/* quando menu abre */
+.overlay-menu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+  /* CENTRALIZA LOGO NO MOBILE */
+  /* HEADER */
+  header {
+  padding: 0 20px;
+  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  }
+
+  header h1 {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* 🔥 ESCONDE MENU NORMAL */
+  .navbar-conteiner {
+    display: none;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  /* 🍔 HAMBURGER */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+
+/* MENU MOBILE ABERTO */
+.menu-mobile {
+  position: fixed; /* 🔥 MUDA TUDO */
+  top: 0;
+  right: -100%; /* começa escondido fora da tela */
+  width: 75%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 25px;
+
+  transition: 0.3s ease;
+  z-index: 999;
+
+
+  /* 🔥 BORDA ARREDONDADA IGUAL APP */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+ .menu-mobile a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu-mobile.active {
+  right: 0;
+}
+
+.menu-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative; /* 🔥 importante */
+}
+
+/* LOGO */
+.menu-top h1 {
+  all: unset; /* 🔥 limpa TODAS as heranças */
+
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  font-size: 22px;
+  font-weight: bold;
+  color: #1EFF00; /* mesma cor STORE */
+
+  margin-bottom: 10px;
+}
+
+.linha {
+  width: 100%;
+  height: 2px;
+  background: rgba(255,255,255,0.4);
+
+  position: relative; /* 🔥 ESSENCIAL */
+  z-index: 1;
+
+  margin-bottom: 12px;
+}
+
+.search-mobile {
+   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-mobile input {
+  width: 80%;
+  height: 28px;
+  background: #444;
+  border: none;
+  border-radius: 20px;
+  padding: 0 10px;
+  color: white;
+}
+
+
+
+  /* BANNER */
+  .banner {
+    height: 300px;
+  }
+
+  .texto-banner h1 {
+    font-size: 20px;
+  }
+
+  .btn-banner {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* MENU 1 (3 imagens) */
+  .menu1 {
+    flex-direction: column;
+  }
+
+  .item {
+    height: 250px;
+  }
+
+  /* MENU 2 */
+  .text_inspire {
+    font-size: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .item2 img {
+    height: 300px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  /* MENU 3 */
+  .menu3 {
+    padding: 20px;
+  }
+
+  .topo2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .novidades {
+    font-size: 24px;
+  }
+
+  .lancamentos {
+    font-size: 26px;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+.item3 img {
+    width: 100%;
+    height: 300px;
+  } 
+}

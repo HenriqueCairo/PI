@@ -1,0 +1,130 @@
+footer {
+  width: 100%;
+  min-height: 362px;
+  padding-bottom: 50px;
+  position: relative;
+  background-color: black;
+  color: #1EFF00;
+}
+
+footer h1 {
+  font-size: 50px;
+  padding-top: 70px;
+  padding-left: 50px;
+}
+
+footer p {
+  padding-top: 29px;
+  font-size: 18px;
+  color: gray;
+  padding-left: 50px;
+}
+
+.icons-media {
+  display: flex;
+  gap: 10px;
+  margin-left: 50px;
+  padding-top: 25px;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: absolute;
+  top: 120px;
+  left: 500px;
+}
+
+.support h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.support a {
+  color: white;
+}
+
+.enterprise {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: absolute;
+  top: 120px;
+  left: 750px;
+}
+
+.enterprise h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.enterprise a {
+  color: white;
+}
+
+.coupon {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: absolute;
+  top: 120px;
+  left: 950px;
+}
+
+.coupon h2 {
+  color: white;
+}
+
+.coupon h3 {
+  color: white;
+  font-weight: 100;
+}
+
+.e-mail{
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 120px;
+  right: 50px;
+}
+
+.e-mail input {
+  width: 230px;
+  height: 25px;
+  background-color: #333;
+  color: white;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+}
+
+.support a:hover {
+  transition: 0.3s;
+  color: #1EFF00;
+}
+
+.enterprise a:hover {
+  transition: 0.3s;
+  color: #1EFF00;
+}
+
+.e-mail input::placeholder {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+
+  .support {
+    left: 250px;
+  }
+
+  .enterprise {
+    left: 450px;
+  }
+
+  .coupon {
+    left: 600px;
+  }
+
+}

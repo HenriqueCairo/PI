@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coleções</title>
     <link rel="stylesheet" href="./coleçoes.css">
+    <link rel="stylesheet" href="/src/components/header/header.css">
+    <link rel="stylesheet" href="/src/components/footer/footer.css">
     
 </head>
 <body>
+    <div id="header"></div>
     <main class="page">
     <section class="launch-section">
       <div class="launch-top">
@@ -17,22 +20,26 @@
 
         <div class="countdown" id="countdown">
           <div class="time-box">
-            <span class="time-value" id="days">04</span>
+            <span class="time-value" id="meses">02</span>
+            <span class="time-label">Meses</span>
+          </div>
+          <div class="time-box">
+            <span class="time-value" id="days">00</span>
             <span class="time-label">Dias</span>
           </div>
 
           <div class="time-box">
-            <span class="time-value" id="hours">12</span>
+            <span class="time-value" id="hours">00</span>
             <span class="time-label">Horas</span>
           </div>
 
           <div class="time-box">
-            <span class="time-value" id="minutes">45</span>
+            <span class="time-value" id="minutes">00</span>
             <span class="time-label">Min</span>
           </div>
 
           <div class="time-box">
-            <span class="time-value" id="seconds">09</span>
+            <span class="time-value" id="seconds">00</span>
             <span class="time-label">Secs</span>
           </div>
         </div>
@@ -61,6 +68,7 @@
       </div>
     </section>
   </main>
-<script src="./coleçoes.css"></script>
+  <div id="footer"></div>
+<script src="./coleçoes.js"></script>
 </body>
 </html>

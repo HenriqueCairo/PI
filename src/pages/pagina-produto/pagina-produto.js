@@ -74,3 +74,11 @@ addToCartBtn.addEventListener("click", () => {
 
   alert("Produto adicionado ao carrinho!");
 });
+async function loadComponent(id, file) {
+  const response = await fetch(file);
+  const html = await response.text();
+  document.getElementById(id).innerHTML = html;
+}
+
+loadComponent("header", "/src/components/header/index.html");
+loadComponent("footer", "/src/components/footer/index.html");
