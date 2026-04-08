@@ -1,0 +1,105 @@
+<div class="global-modal login-modal" id="loginModal">
+    <button class="global-modal-close" data-close-modal>&times;</button>
+
+    <div class="modal-card">
+        <h1>Bem-vindo(a) de volta!</h1>
+        <p class="modal-subtitle">Insira sua credenciais para acessar sua conta. </p>
+
+        <form id="loginForm" class="modal-form">
+            <div class="input-group">
+                <input type="email" id="loginEmail" placeholder="ENDEREÇO DE E-MAIL">
+            </div>
+            <div class="input-group">
+                <input type="password" id="loginSenha" placeholder="SENHA">
+            </div>
+            <div class="forgot-wrap">
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+
+            <button type="submit" class="btn-primary">Entrar</button>
+
+        </form>
+
+        <div class="modal-bottom-text">
+           <p>Não tem uma conta?</p>
+           <button class="switch-modal-btn" data-open-register>Cadastre-se agora</button>
+        </div>
+    </div>
+</div>
+
+<div class="global-modal register-modal" id="registerModal">
+  <button class="global-modal-close" data-close-modal>&times;</button>
+
+  <div class="modal-card register-card">
+    <h1>Junte-se a nós.</h1>
+    <p class="modal-subtitle">Crie uma conta para receber ofertas exclusivas</p>
+
+    <form id="registerForm" class="modal-form">
+      <div class="row two-columns">
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="sobrenome" placeholder="Sobrenome">
+      </div>
+
+      <div class="modal-label">Data de nascimento</div>
+      <div class="row three-columns">
+        <input type="text" id="dia" placeholder="Dia" maxlength="2">
+        <input type="text" id="mes" placeholder="Mês" maxlength="2">
+        <input type="text" id="ano" placeholder="Ano" maxlength="4">
+      </div>
+
+      <div class="row sexo-cpf">
+        <div class="sexo-box">
+          <div class="modal-label">Sexo</div>
+          <div class="radio-group">
+            <label><input type="radio" name="sexo" value="Masculino"> Masculino</label>
+            <label><input type="radio" name="sexo" value="Feminino"> Feminino</label>
+          </div>
+        </div>
+
+        <div class="cpf-box">
+          <div class="modal-label">CPF</div>
+          <input type="text" id="cpf" placeholder="00000000000" maxlength="11">
+        </div>
+      </div>
+
+      <input type="text" id="telefone" placeholder="Telefone: (xx) 0 0000 - 0000">
+      <input type="email" id="registerEmail" placeholder="ENDEREÇO DE E-MAIL">
+      <input type="password" id="registerSenha" placeholder="SENHA">
+
+      <button type="submit" class="btn-primary">Criar Conta</button>
+    </form>
+
+    <div class="modal-bottom-text">
+      <p>Já tem uma conta?</p>
+      <button class="switch-modal-btn" data-open-login>Entrar</button>
+    </div>
+  </div>
+</div>
+
+<div class="global-modal cart-modal" id="cartModal">
+  <button class="global-modal-close cart-close" data-close-modal>&times;</button>
+
+  <div class="cart-modal-box">
+    <div class="cart-content">
+      <div class="cart-items" id="cartItemsContainer"></div>
+
+      <aside class="summary">
+        <h3>Resumo</h3>
+
+        <div id="cartSummaryLines"></div>
+
+        <div class="summary-line">
+          <span>Frete</span>
+          <span class="free-shipping">GRÁTIS</span>
+        </div>
+
+        <div class="summary-total">
+          <span>Total</span>
+          <span id="cartTotal">R$0,00</span>
+        </div>
+
+        <button class="checkout-btn" id="goToCheckoutBtn">Finalizar Compra</button>
+      </aside>
+    </div>
+  </div>
+</div>

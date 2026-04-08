@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Produto</title>
     <link rel="stylesheet" href="./pagina-produto.css">
+    <link rel="stylesheet" href="/src/styles/global.css">
     <link rel="stylesheet" href="/src/components/header/header.css">
     <link rel="stylesheet" href="/src/components/footer/footer.css">
+    <link rel="stylesheet" href="/src/components/modals/modals.css">
     
 </head>
 <body>
     <div id="header"></div>
      <main class="page">
-    <a href="#" class="back-link">← Voltar à loja</a>
+    <a href="/src/pages/lista-produto/index.html" class="back-link">← Voltar à loja</a>
 
     <section class="product-layout">
       <!-- COLUNA ESQUERDA -->
@@ -111,6 +113,10 @@
     </section>
   </main>
   <div id="footer"></div>
-<script src="./pagina-produto.js"></script>
+  <div id="modals"></div>
+  <script src="/src/components/header/header.js"></script>
+  <script src="/src/components/footer/footer.js"></script>
+  <script src="/src/components/modals/modals.js"></script>
+  <script src="./pagina-produto.js"></script>
 </body>
 </html>

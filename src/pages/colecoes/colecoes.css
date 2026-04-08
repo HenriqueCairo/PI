@@ -17,16 +17,18 @@ body {
   font-family: "Inter", sans-serif;
   color: white;
   width: 100%;
- 
+  background: #ffffff;
+  overflow-x: hidden;
 }
 
 .page {
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  background: white;
-  min-height: 100vh;
-  padding-top: 80px;  
-  padding-bottom: 80px; 
+  min-height: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: transparent;
 }
 
 .launch-section {
@@ -234,6 +236,66 @@ body {
   .product-info p {
     font-size: 0.95rem;
     margin-bottom: 24px;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 20px 10px 24px;
+  }
+
+  .launch-top {
+    padding: 20px 12px 12px;
+  }
+
+  .launch-title {
+    font-size: 2.2rem;
+  }
+
+  .launch-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .countdown {
+    gap: 10px;
+  }
+
+  .time-box {
+    min-width: 48px;
+  }
+
+  .time-value {
+    font-size: 1.4rem;
+  }
+
+  .launch-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px 12px 24px;
+    min-height: auto;
+  }
+
+  .product-card {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+
+  .product-info {
+    max-width: 100%;
+  }
+
+  .product-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .product-info p {
+    font-size: 0.95rem;
+    margin-bottom: 22px;
   }
 
   .cta-button {

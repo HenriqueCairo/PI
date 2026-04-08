@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>checkout</title>
     <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="/src/styles/global.css">
     <link rel="stylesheet" href="/src/components/header/header.css">
     <link rel="stylesheet" href="/src/components/footer/footer.css">
+    <link rel="stylesheet" href="/src/components/modals/modals.css">
+
 </head>
 <body>
     <div id="header"></div>
@@ -42,7 +45,7 @@
                     <div class="cep-conteiner">
                         <label for="cep"></label> <br>
                         <input type="text" id="cep" name="cep" placeholder="CEP" required onkeypress="if(event.key === 'Enter') buscarCep()">
-                        <button onclick="buscarCep()">buscar CEP</button>
+                        <button onclick="buscarCep()">BUSCAR CEP</button>
                     </div>
                     
                     <br>
@@ -111,13 +114,20 @@
                     <span>TOTAL</span>
                  <span>R$971,98</span>
                 </div>
+                 <a href="/src/pages/pagamento/index.html">
 
-                <button class="finish">Finalizar Compra</button>
+                     <button  class="finish">Finalizar Compra</button>
+                 </a>
+                
                 
             </div>
         </section>
     </main>
     <div id="footer"></div>
+    <div id="modals"></div>
+    <script src="/src/components/header/header.js"></script>
+    <script src="/src/components/footer/footer.js"></script>
+    <script src="/src/components/modals/modals.js"></script>
     <script src="./checkout.js"></script>
 </body>
 </html>
